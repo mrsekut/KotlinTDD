@@ -1,6 +1,8 @@
 package money
 
-fun main(args: Array<String>) {
-    println("Hello World!!")
+class Dollar (var amount: Int){
+    fun times(multiplier: Int){ }
+
+
 }
 

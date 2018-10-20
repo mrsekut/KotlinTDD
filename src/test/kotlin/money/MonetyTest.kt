@@ -1,6 +1,7 @@
 package money
 
 import org.junit.Test
+import money.Dollar
 import kotlin.test.assertEquals
 import kotlin.test.assertNull
 
@@ -8,7 +9,8 @@ class MoneyTest {
 
     @Test
     fun tetMultiplication() {
-        val five = dollar(5)
-        assertEquals(dollar(10), five*2)
+        val five = Dollar(5)
+        five.times(2)
+        assertEquals(10, five * 2)
     }
 }
