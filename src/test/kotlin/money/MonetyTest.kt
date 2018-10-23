@@ -4,6 +4,7 @@ import org.junit.Test
 import money.Dollar
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
+import kotlin.test.assertFalse
 
 class MoneyTest {
 
@@ -21,5 +22,6 @@ class MoneyTest {
     @Test
     fun testEquality() {
         assertTrue(Dollar(5).equals(Dollar(5)))
+        assertFalse(Dollar(5).equals(Dollar(6)))
     }
 }
