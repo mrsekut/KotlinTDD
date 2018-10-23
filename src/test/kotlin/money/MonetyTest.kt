@@ -11,6 +11,6 @@ class MoneyTest {
     fun tetMultiplication() {
         val five = Dollar(5)
         five.times(2)
-        assertEquals(10, five * 2)
+        assertEquals(10, five.amount)
     }
 }
